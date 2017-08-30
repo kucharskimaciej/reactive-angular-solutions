@@ -1,0 +1,22 @@
+.prompt {
+  border-radius: 6px;
+  border: 2px dashed #9498ae;
+
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  color: #9498ae;
+}
+
+.prompt:hover {
+  border-color: #d3d3e4;
+  color: #d3d3e4;
+}
+
+.prompt p {
+  margin: 0;
+}

@@ -1,0 +1,36 @@
+:host {
+  width: 100%;
+  font-size: inherit;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+}
+
+.is-editing {
+  padding: 8px 10px;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+  border: 0;
+  border-radius: 4px;
+
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0;
+
+  font-size: inherit;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  line-height: 1;
+
+  border: 0;
+  background: transparent;
+}
+
+input,
+input:active,
+input:focus {
+  outline: 0;
+  box-shadow: none;
+}

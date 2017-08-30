@@ -1,0 +1,26 @@
+<ng-container *ngIf="adding$ | async; then addCardForm else addCardPrompt"></ng-container>
+
+<ng-template #addCardPrompt>
+  <div class="prompt" (click)="toggle$.next()">
+    <p>
+      <i class="fa fa-plus"></i> Add a card
+    </p>
+  </div>
+</ng-template>
+
+<ng-template #addCardForm>
+  <form class="form" (submit)="onSubmit()">
+    <input class="input" [(ngModel)]="title" name="title" #input />
+
+    <footer class="addCard__footer">
+      <button class="button button--success">
+        Add
+      </button>
+      <button type="button"
+              class="button"
+              (click)="reset()">
+        <i class="fa fa-close"></i>
+      </button>
+    </footer>
+  </form>
+</ng-template>

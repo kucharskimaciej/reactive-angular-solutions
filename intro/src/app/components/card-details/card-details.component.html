@@ -1,0 +1,32 @@
+<section class="modal" *ngIf="card && currentList">
+  <div class="body">
+    <div class="details">
+      <h2 class="details__title">
+        <editable-title [value]="card.title" (update)="onTitleChange($event)"></editable-title>
+      </h2>
+      in list <strong>{{ currentList.title }}</strong>
+    </div>
+
+    <aside class="actions">
+      <div class="move">
+        <strong>Move to: </strong>
+        <ul>
+          <li *ngFor="let list of lists">
+            <a (click)="moveCard(list.id)">{{ list.title }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="button" (click)="onRemove()">
+        <i class="fa fa-trash"></i>
+        Remove card
+      </button>
+    </aside>
+  </div>
+
+  <span class="modal__close" (click)="close()">
+    <i class="fa fa-close"></i>
+  </span>
+</section>
+
+<div class="backdrop" (click)="close()"></div>

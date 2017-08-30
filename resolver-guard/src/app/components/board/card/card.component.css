@@ -1,0 +1,28 @@
+.card {
+  background-color: #fff;
+  padding: 10px 8px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+
+  position: relative;
+  top: 0;
+
+  transition: all .3s ease-out;
+
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card:hover {
+  top: -1px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .22);
+}
+
+.title {
+  margin: 0;
+  font-weight: 300;
+}

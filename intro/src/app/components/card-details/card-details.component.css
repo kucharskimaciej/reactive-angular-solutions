@@ -1,0 +1,85 @@
+:host {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 100;
+}
+
+.backdrop,
+.wrapper {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.backdrop {
+  display: block;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 10;
+}
+
+.modal {
+  margin: 20% auto 0;
+  width: 500px;
+  background-color: #f4f5f8;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .22);
+
+  padding: 16px 40px 20px 24px;
+
+  position: relative;
+  z-index: 11;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  cursor: pointer;
+  color: #9498ae;
+}
+
+.modal__close:hover {
+  color: #d3d3e4;
+}
+
+.details {
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.details__title {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.actions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.move {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto auto auto 0;
+}
+.move li,
+.move strong,
+.move ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.move strong {
+  margin-right: 5px;
+}
+
+
+.move a {
+  font-weight: 300;
+  text-decoration: underline;
+  margin-right: 3px;
+  cursor: pointer;
+}

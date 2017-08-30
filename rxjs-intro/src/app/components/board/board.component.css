@@ -1,0 +1,52 @@
+.board {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  padding: 0 20px;
+  overflow-x: auto;
+}
+
+.list {
+  width: 310px;
+  flex-shrink: 0;
+
+  padding: 20px 20px;
+  margin-bottom: 10px;
+
+  border: 0;
+  border-right: 1px solid #d3d3e4;
+  border-left: 1px solid white;
+
+  position: relative;
+}
+
+.list:not(:first-child):before,
+.list:not(:first-child):after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 60px;
+
+  position: absolute;
+  top: 0;
+  left: -2px;
+
+  background: linear-gradient(to bottom, rgba(244, 245, 248, 1) 40%, rgba(0, 0, 0, 0))
+}
+
+.list:not(:first-child):after {
+  top: auto;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(244, 245, 248, 1))
+}
+
+.list:first-child {
+  margin-left: -20px;
+  border-left: none;
+}
+
+.list:last-child {
+  margin-right: -20px;
+  border-right: none;
+}

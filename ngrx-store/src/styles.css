@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext');
+@import url('~font-awesome/css/font-awesome.css');
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  color: #171b2f;
+  font-size: 16px;
+
+  background-color: #f4f5f8;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.button {
+  display: inline-block;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+  background-color: white;
+  border-radius: 4px;
+  border: 0;
+
+  padding: 8px 12px;
+
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+
+  position: relative;
+  top: 0;
+  transition: all .3s;
+}
+
+.button:hover {
+  top: -1px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .22);
+}
+
+.button + .button {
+  margin-left: 4px;
+}
+
+.button--success {
+  background-color: #3A8027;
+  color: white;
+}
+
+.button--block {
+  display: block;
+  width: auto;
+}
+
+.button--block + .button--block {
+  margin-top: 4px;
+}
+
+.button .fa:first-child {
+  margin-right: 5px;
+}
